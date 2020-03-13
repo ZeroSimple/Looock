@@ -7,7 +7,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+import com.zerosimple.looock.R;
+
+public class SecondActivity extends Activity {
 
 
 
@@ -37,7 +39,7 @@ public class MainActivity extends Activity {
         Intent i  = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
         i.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, mComponentName);
         i.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION,
-                "Active Device to start Looock! Looock -  one-button lock screen application.");
+                "Active Device Administrator to start Looock.");
         startActivityForResult(i, 0);
     }
 
